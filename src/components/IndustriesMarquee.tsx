@@ -49,7 +49,7 @@ interface MarqueeRowProps {
 const MarqueeRow: React.FC<MarqueeRowProps> = ({ direction = "left" }) => (
   <Marquee
     gradient={true}
-    gradientColor={[15, 23, 42]} // tailwind slate-900 color
+    gradientColor="rgb(15, 23, 42)" // tailwind slate-900 color
     pauseOnHover={true}
     direction={direction}
     speed={30}
