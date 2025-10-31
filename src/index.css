@@ -1,1 +1,45 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Continuous Marquee Animations (GPU-accelerated for smoothness) */
+@keyframes marquee-slow {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes marquee-slow2 {
+  from {
+    transform: translate3d(50%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Animation Classes */
+.animate-marquee-slow {
+  animation: marquee-slow 65s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-slow2 {
+  animation: marquee-slow2 65s linear infinite;
+  will-change: transform;
+}
+
+/* Mobile speed adjustment */
+@media (max-width: 768px) {
+  .animate-marquee-slow {
+    animation-duration: 75s !important;
+  }
+  .animate-marquee-slow2 {
+    animation-duration: 75s !important;
+  }
+}

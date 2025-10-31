@@ -55,15 +55,6 @@ const Home: React.FC = () => {
               </span>
             </motion.h1>
 
-            <motion.h2
-              className="text-base sm:text-lg text-gray-700 dark:text-gray-300 font-medium"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
-            >
-              (about your business)
-            </motion.h2>
-
             <motion.p
               className="text-gray-600 dark:text-gray-400 text-sm sm:text-base leading-relaxed max-w-md"
               initial={{ opacity: 0, y: 15 }}
