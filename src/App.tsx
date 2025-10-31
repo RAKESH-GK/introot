@@ -1,10 +1,11 @@
-import AppLayout from "./components/AppLayout";
+import Header from "./components/Header";
 import Home from "./components/Home";
 
 export default function App() {
   return (
-    <AppLayout>
+    <div className="bg-gray-950 min-h-screen text-white">
+      <Header />
       <Home />
-    </AppLayout>
+    </div>
   );
 }
