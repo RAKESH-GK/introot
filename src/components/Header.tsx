@@ -23,7 +23,7 @@ const Header: React.FC = () => {
           <div className="flex justify-between items-center h-16">
 
             {/* Logo */}
-            <a href="/" className="flex items-center">
+            <a href="#Home" className="flex items-center">
               <img
                 src={Logo}
                 alt="Introot Logo"

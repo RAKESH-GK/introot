@@ -6,7 +6,7 @@ import HeroClip from "../assets/HeroClip.mp4"; // ✅ Import local video properl
 
 const Home: React.FC = () => {
   return (
-    <section className="flex flex-col justify-between px-4 sm:px-6 lg:px-16 bg-gradient-to-r from-white to-blue-50 dark:from-gray-900 dark:to-gray-800 pt-10 sm:pt-14 pb-6 relative overflow-hidden">
+    <section id="Home" className="flex flex-col justify-between px-4 sm:px-6 lg:px-16 bg-gradient-to-r from-white to-blue-50 dark:from-gray-900 dark:to-gray-800 pt-10 sm:pt-14 pb-6 relative overflow-hidden">
 
       {/* Background Blobs */}
       <motion.div

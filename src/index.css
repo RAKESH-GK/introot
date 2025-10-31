@@ -3,43 +3,39 @@
 html {
   scroll-behavior: smooth;
 }
-
+:root {
+  scroll-padding-top: 4rem; /* Adjust to match header height */
+}
 /* Continuous Marquee Animations (GPU-accelerated for smoothness) */
 @keyframes marquee-slow {
   from {
-    transform: translate3d(0, 0, 0);
+    transform: translateX(0);
   }
   to {
-    transform: translate3d(-50%, 0, 0);
+    transform: translateX(-50%);
   }
 }
 
 @keyframes marquee-slow2 {
   from {
-    transform: translate3d(50%, 0, 0);
+    transform: translateX(50%);
   }
   to {
-    transform: translate3d(0, 0, 0);
+    transform: translateX(0);
   }
 }
 
-/* Animation Classes */
 .animate-marquee-slow {
-  animation: marquee-slow 65s linear infinite;
-  will-change: transform;
+  animation: marquee-slow 80s linear infinite; /* Smooth + slightly faster */
 }
 
 .animate-marquee-slow2 {
-  animation: marquee-slow2 65s linear infinite;
-  will-change: transform;
+  animation: marquee-slow2 80s linear infinite;
 }
 
-/* Mobile speed adjustment */
 @media (max-width: 768px) {
-  .animate-marquee-slow {
-    animation-duration: 75s !important;
-  }
+  .animate-marquee-slow,
   .animate-marquee-slow2 {
-    animation-duration: 75s !important;
+    animation-duration: 90s !important;
   }
 }

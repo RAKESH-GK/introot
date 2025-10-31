@@ -1,18 +1,19 @@
 import React from "react";
 
-const images: string[] = [
-  "src/assets/projects/graphic1.png",
-  "src/assets/projects/graphic2.png",
-  "src/assets/projects/lms.png",
-  "src/assets/projects/mobile.png",
-  "src/assets/projects/property.png",
-];
+// ✅ Import images properly for Vite
+import graphic1 from "../assets/projects/graphic1.png";
+import graphic2 from "../assets/projects/graphic2.png";
+import lms from "../assets/projects/lms.png";
+import mobile from "../assets/projects/mobile.png";
+import property from "../assets/projects/property.png";
+
+const images: string[] = [graphic1, graphic2, lms, mobile, property];
 
 const OurWorks: React.FC = () => {
   return (
     <section id="Works" className="relative bg-gray-900 py-16 overflow-hidden">
       {/* Section Heading */}
-      <div className="max-w-6xl mx-auto px-4 text-center mb-8">
+      <div className="max-w-6xl mx-auto px-4 text-center mb-10">
         <h2 className="text-3xl sm:text-4xl font-bold text-white">Our Works</h2>
         <p className="text-gray-400 mt-3 text-lg">
           Explore the digital magic we’ve crafted for brands just like yours.
@@ -30,7 +31,7 @@ const OurWorks: React.FC = () => {
           {[...images, ...images].map((src, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-[500px] sm:w-[600px] h-[350px] sm:h-[450px] bg-gray-100 rounded-xl overflow-hidden shadow-md mx-1 sm:mx-2 flex items-center justify-center"
+              className="flex-shrink-0 w-[450px] sm:w-[550px] h-[320px] sm:h-[420px] bg-gray-800 rounded-xl overflow-hidden shadow-md mx-2 flex items-center justify-center"
             >
               <img
                 src={src}
@@ -41,12 +42,12 @@ const OurWorks: React.FC = () => {
           ))}
         </div>
 
-        {/* Second Track (offset for continuous effect) */}
+        {/* Second Track (offset for continuous flow) */}
         <div className="flex w-max animate-marquee-slow2 absolute top-0">
           {[...images, ...images].map((src, index) => (
             <div
               key={`dup-${index}`}
-              className="flex-shrink-0 w-[500px] sm:w-[600px] h-[350px] sm:h-[450px] bg-gray-100 rounded-xl overflow-hidden shadow-md mx-1 sm:mx-2 flex items-center justify-center"
+              className="flex-shrink-0 w-[450px] sm:w-[550px] h-[320px] sm:h-[420px] bg-gray-800 rounded-xl overflow-hidden shadow-md mx-2 flex items-center justify-center"
             >
               <img
                 src={src}

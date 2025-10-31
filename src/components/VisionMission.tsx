@@ -53,7 +53,7 @@ const VisionMission: React.FC = () => {
           <img
             src="src/assets/Vison-01.png"
             alt="About Introot"
-            className="w-full h-full object-cover transform transition-transform duration-700 hover:scale-105"
+            className="w-full h-full object-cover transition-transform duration-700"
           />
         </div>
 
@@ -61,7 +61,7 @@ const VisionMission: React.FC = () => {
         <div className="relative flex flex-col justify-between h-full">
           <div
             key={current.title}
-            className="transition-all duration-700 ease-in-out animate-fade-in"
+            className="transition-all duration-700 ease-in-out"
           >
             <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               {current.title}
@@ -75,14 +75,14 @@ const VisionMission: React.FC = () => {
           <div className="flex justify-start mt-6 gap-4">
             <button
               onClick={handlePrev}
-              className="p-3 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full shadow transition-all duration-300 hover:scale-105"
+              className="p-3 bg-gray-200 dark:bg-gray-800 rounded-full shadow transition-all duration-300"
               aria-label="Previous"
             >
               <ChevronLeft className="w-5 h-5 text-gray-800 dark:text-white" />
             </button>
             <button
               onClick={handleNext}
-              className="p-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow transition-all duration-300 hover:scale-105"
+              className="p-3 bg-blue-600 text-white rounded-full shadow transition-all duration-300"
               aria-label="Next"
             >
               <ChevronRight className="w-5 h-5" />
