@@ -26,16 +26,16 @@ html {
 }
 
 .animate-marquee-slow {
-  animation: marquee-slow 80s linear infinite; /* Smooth + slightly faster */
+  animation: marquee-slow 60s linear infinite; /* Smooth + slightly faster */
 }
 
 .animate-marquee-slow2 {
-  animation: marquee-slow2 80s linear infinite;
+  animation: marquee-slow2 60s linear infinite;
 }
 
 @media (max-width: 768px) {
   .animate-marquee-slow,
   .animate-marquee-slow2 {
-    animation-duration: 90s !important;
+    animation-duration: 60s !important;
   }
 }

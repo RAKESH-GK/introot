@@ -31,7 +31,7 @@ const OurWorks: React.FC = () => {
           {[...images, ...images].map((src, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-[450px] sm:w-[550px] h-[320px] sm:h-[420px] bg-gray-800 rounded-xl overflow-hidden shadow-md mx-2 flex items-center justify-center"
+              className="shrink-0 w-[450px] sm:w-[550px] h-80 sm:h-[420px] bg-gray-800 rounded-xl overflow-hidden shadow-md mx-2 flex items-center justify-center"
             >
               <img
                 src={src}
@@ -47,7 +47,7 @@ const OurWorks: React.FC = () => {
           {[...images, ...images].map((src, index) => (
             <div
               key={`dup-${index}`}
-              className="flex-shrink-0 w-[450px] sm:w-[550px] h-[320px] sm:h-[420px] bg-gray-800 rounded-xl overflow-hidden shadow-md mx-2 flex items-center justify-center"
+              className="shrink-0 w-[450px] sm:w-[550px] h-80 sm:h-[420px] bg-gray-800 rounded-xl overflow-hidden shadow-md mx-2 flex items-center justify-center"
             >
               <img
                 src={src}
