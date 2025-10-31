@@ -10,7 +10,7 @@ const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
 
   const menuLinks: MenuLink[] = [
-    { name: "Contact", href: "#Footer" },
+    { name: "Contact", href: "#Contact" },
     { name: "Service", href: "#Services" },
     { name: "Story", href: "#VisionMission" },
     { name: "Works", href: "#Works" },
