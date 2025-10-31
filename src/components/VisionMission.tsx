@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import visionImage from "../assets/Vison-01.png"; // ✅ Proper import
 
 const contents = [
   {
@@ -51,7 +52,7 @@ const VisionMission: React.FC = () => {
         {/* Image Section */}
         <div className="rounded-2xl overflow-hidden shadow-xl">
           <img
-            src="src/assets/Vison-01.png"
+            src={visionImage}
             alt="About Introot"
             className="w-full h-full object-cover transition-transform duration-700"
           />
