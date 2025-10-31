@@ -1,17 +1,28 @@
 import React from "react";
+import aadarsh from "../assets/partners/aadarsh.png";
+import bhagathSing from "../assets/partners/bhagath-sing.png";
+import cald from "../assets/partners/cald.png";
+import djJagath from "../assets/partners/dj-jagath.png";
+import indus from "../assets/partners/indus.png";
+import jaiSriRam from "../assets/partners/jai-sri-ram.png";
+import medha from "../assets/partners/medha.png";
+import shreeDental from "../assets/partners/shree-dental-logo-01.png";
+import storyByClick from "../assets/partners/story-by-click.png";
+import swaagIceCreams from "../assets/partners/swaad-ice-creams.png";
+import tradingKannada from "../assets/partners/trading-kannada-logo.png";
 
 const brands = [
-  { name: "Aadarsh", logo: "src/assets/partners/aadarsh.png" },
-  { name: "Bhagath Sing", logo: "src/assets/partners/bhagath-sing.png" },
-  { name: "CALD", logo: "src/assets/partners/cald.png" },
-  { name: "DJ Jagath", logo: "src/assets/partners/dj-jagath.png" },
-  { name: "Indus", logo: "src/assets/partners/indus.png" },
-  { name: "Jai Sri Ram", logo: "src/assets/partners/jai-sri-ram.png" },
-  { name: "Medha", logo: "src/assets/partners/medha.png" },
-  { name: "Shree Dental", logo: "src/assets/partners/shree-dental-logo-01.png" },
-  { name: "Story By Click", logo: "src/assets/partners/story-by-click.png" },
-  { name: "Swaag Ice Creams", logo: "src/assets/partners/swaad-ice-creams.png" },
-  { name: "Trading Kannada", logo: "src/assets/partners/trading-kannada-logo.png" },
+  { name: "Aadarsh", logo: aadarsh },
+  { name: "Bhagath Sing", logo: bhagathSing },
+  { name: "CALD", logo: cald },
+  { name: "DJ Jagath", logo: djJagath },
+  { name: "Indus", logo: indus },
+  { name: "Jai Sri Ram", logo: jaiSriRam },
+  { name: "Medha", logo: medha },
+  { name: "Shree Dental", logo: shreeDental },
+  { name: "Story By Click", logo: storyByClick },
+  { name: "Swaag Ice Creams", logo: swaagIceCreams },
+  { name: "Trading Kannada", logo: tradingKannada },
 ];
 
 const TrustedBy: React.FC = () => {
