@@ -74,7 +74,7 @@ const Home: React.FC = () => {
         </motion.p>
 
         <motion.a
-          href="#Footer"
+          href="#Contact"
           className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-7 py-3 rounded-full text-base font-medium shadow-md transition"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
