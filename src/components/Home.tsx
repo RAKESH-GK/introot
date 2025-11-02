@@ -47,7 +47,7 @@ const Home: React.FC = () => {
                   "business",
                   "apps",
                   "brand",
-                  "tech",,
+                  "tech",
                   "ideas",
                   "dreams",
                   "success",
