@@ -47,13 +47,14 @@ const processSteps: ProcessStep[] = [
 
 const ProcessSection: React.FC = () => {
   return (
-    <section className="pt-20 pb-12 px-4 sm:px-8 lg:px-16 bg-gray-900 text-white">
+    <section className="pt-20 pb-12 px-4 sm:px-8 lg:px-16 bg-[#0B0D13] text-white">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl font-extrabold mb-3">
+        {/* Heading */}
+        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">
           How we bring your ideas to life.
         </h2>
-        <p className="text-gray-300 text-lg mb-10">
-          See how we take your idea from start to finish, and make it a success!
+        <p className="text-gray-400 text-base sm:text-lg mb-12">
+          From concept to completion, we make your vision a reality.
         </p>
 
         {/* Process Grid */}
@@ -61,7 +62,7 @@ const ProcessSection: React.FC = () => {
           {processSteps.map((step) => (
             <div
               key={step.id}
-              className={`rounded-xl p-6 shadow-lg text-left bg-gradient-to-br ${step.gradient} text-gray-800 hover:scale-105 transition-transform duration-300 group`}
+              className={`rounded-xl p-6 shadow-lg text-left bg-gradient-to-br ${step.gradient} text-gray-800 hover:scale-105 transition-transform duration-300`}
             >
               <div className="flex items-center justify-between mb-4">
                 <div className="text-3xl font-bold opacity-80">{step.id}</div>
@@ -71,16 +72,6 @@ const ProcessSection: React.FC = () => {
               <p className="text-sm opacity-90">{step.desc}</p>
             </div>
           ))}
-        </div>
-
-        {/* CTA Button */}
-        <div className="mt-12">
-          <a
-            href="tel:+91 8861092749"
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition"
-          >
-            Let’s Talk
-          </a>
         </div>
       </div>
     </section>

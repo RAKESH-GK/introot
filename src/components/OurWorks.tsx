@@ -11,9 +11,9 @@ const images: string[] = [graphic1, graphic2, lms, mobile, property];
 
 const OurWorks: React.FC = () => {
   return (
-    <section id="Works" className="relative bg-gray-900 py-16 overflow-hidden">
+    <section id="Works" className="relative bg-gray-900 py-14 overflow-hidden">
       {/* Section Heading */}
-      <div className="max-w-6xl mx-auto px-4 text-center mb-10">
+      <div className="max-w-6xl mx-auto px-4 text-center mb-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-white">Our Works</h2>
         <p className="text-gray-400 mt-3 text-lg">
           Explore the digital magic we’ve crafted for brands just like yours.
@@ -31,12 +31,12 @@ const OurWorks: React.FC = () => {
           {[...images, ...images].map((src, index) => (
             <div
               key={index}
-              className="shrink-0 w-[450px] sm:w-[550px] h-80 sm:h-[420px] bg-gray-800 rounded-xl overflow-hidden shadow-md mx-2 flex items-center justify-center"
+              className="shrink-0 w-[420px] sm:w-[520px] bg-gray-800 rounded-2xl overflow-hidden shadow-md mx-2 flex items-center justify-center"
             >
               <img
                 src={src}
                 alt={`project-${index}`}
-                className="w-full h-full object-contain"
+                className="w-full h-auto object-contain"
               />
             </div>
           ))}
@@ -47,12 +47,12 @@ const OurWorks: React.FC = () => {
           {[...images, ...images].map((src, index) => (
             <div
               key={`dup-${index}`}
-              className="shrink-0 w-[450px] sm:w-[550px] h-80 sm:h-[420px] bg-gray-800 rounded-xl overflow-hidden shadow-md mx-2 flex items-center justify-center"
+              className="shrink-0 w-[420px] sm:w-[520px] bg-gray-800 rounded-2xl overflow-hidden shadow-md mx-2 flex items-center justify-center"
             >
               <img
                 src={src}
                 alt={`project-duplicate-${index}`}
-                className="w-full h-full object-contain"
+                className="w-full h-auto object-contain"
               />
             </div>
           ))}

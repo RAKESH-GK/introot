@@ -1,5 +1,11 @@
 import React from "react";
-import { FaWhatsapp, FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa";
+import {
+  FaWhatsapp,
+  FaInstagram,
+  FaLinkedin,
+  FaFacebook,
+  FaPhoneAlt,
+} from "react-icons/fa";
 
 const Contact: React.FC = () => {
   return (
@@ -20,21 +26,31 @@ const Contact: React.FC = () => {
           magic happen.
         </p>
 
-        {/* WhatsApp Button */}
-        <div className="mt-6">
+        {/* Buttons Side by Side */}
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          {/* WhatsApp Button */}
           <a
             href="https://wa.me/+918861092749"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1EBE5C] text-white px-6 py-3 rounded-full text-base font-medium transition"
+            className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1EBE5C] text-white px-6 py-3 rounded-full text-base font-medium transition w-full sm:w-auto justify-center"
           >
             <FaWhatsapp className="text-2xl" />
             Chat on WhatsApp
           </a>
+
+          {/* Call Button */}
+          <a
+            href="tel:+918861092749"
+            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition w-full sm:w-auto justify-center"
+          >
+            <FaPhoneAlt className="text-lg" />
+            Let’s Talk
+          </a>
         </div>
 
         {/* Social Icons */}
-        <div className="flex justify-center gap-6 mt-8 text-xl text-gray-400">
+        <div className="flex justify-center gap-6 mt-10 text-xl text-gray-400">
           <a
             href="https://instagram.com/introot.in"
             target="_blank"
