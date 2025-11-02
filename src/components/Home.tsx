@@ -54,8 +54,6 @@ const Home: React.FC = () => {
                   "success",
                 ]}
                 loop
-                cursor
-                cursorStyle="_"
                 typeSpeed={90}
                 deleteSpeed={60}
                 delaySpeed={1500}
