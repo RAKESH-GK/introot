@@ -1,3 +1,4 @@
+
 import aadarsh from "../assets/partners/aadarsh.png";
 import bhagathSing from "../assets/partners/bhagath-sing.png";
 import cald from "../assets/partners/cald.png";
@@ -54,7 +55,7 @@ const TrustedBy: React.FC = () => {
               <img
                 src={brand.logo}
                 alt={brand.name}
-                className="h-12 w-auto object-contain"
+                className="h-18 w-auto object-contain"
               />
             </div>
           ))}
@@ -69,7 +70,7 @@ const TrustedBy: React.FC = () => {
               <img
                 src={brand.logo}
                 alt={brand.name}
-                className="h-12 w-auto object-contain"
+                className="h-18 w-auto object-contain"
               />
             </div>
           ))}
