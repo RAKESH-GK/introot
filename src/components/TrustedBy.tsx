@@ -1,10 +1,3 @@
-import React from "react";
-import {
-  FaWhatsapp,
-  FaInstagram,
-  FaLinkedin,
-  FaFacebook,
-} from "react-icons/fa";
 import aadarsh from "../assets/partners/aadarsh.png";
 import bhagathSing from "../assets/partners/bhagath-sing.png";
 import cald from "../assets/partners/cald.png";
